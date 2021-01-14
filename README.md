@@ -8,7 +8,6 @@
 More flexible and easy cart system compatible with Laravel version 5.6, 5.7, 5.8, 6, 7 and 8.
 
 ## Installing Shopping Cart
-
 Next, run the Composer command to install the latest stable version:
 
 ```bash
