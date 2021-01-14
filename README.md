@@ -5,7 +5,7 @@
 
 
 # Laravel Shopping Cart
-More flexible and easy cart system.
+More flexible and easy cart system compatible with Laravel version 5.6, 5.7, 5.8, 6, 7 and 8.
 
 ## Installing Shopping Cart
 
@@ -104,7 +104,6 @@ Cart::init('whishlist');
 // Example 
 $cart = Cart::info();
 return $cart;
-// Then all whishlist cart items you will be get. We discuss this matter below.
 ```
 
 
@@ -385,11 +384,69 @@ Cart::item('qty');
 Cart::item('total')  //etc
 ```
 
+Look like as
+
+```json
+[
+    {
+        "uid": "h6zc3duk5cqu69y5tcof0u01iwx47tyy",
+        "product": 6,
+        "name": "Product 6",
+        "price": 80.5,
+        "qty": 1,
+        "weight": 0,
+        "discount": 0,
+        "tax": 0,
+        "shipping": 0,
+        "thumb": null,
+        "options": [],
+        "subtotal": "80.50",
+        "total": "80.50",
+        "created_at": "2021-01-14T23:00:14.590324Z",
+        "updated_at": null
+    },
+    {
+        "uid": "iafu81ochafwyeehpkviy5s7dwdsogbf",
+        "product": 1,
+        "name": "Product 1",
+        "price": 80.5,
+        "qty": 1,
+        "weight": 0,
+        "discount": 0,
+        "tax": 0,
+        "shipping": 0,
+        "thumb": null,
+        "options": [],
+        "subtotal": "80.50",
+        "total": "80.50",
+        "created_at": "2021-01-14T23:00:23.505786Z",
+        "updated_at": null
+    },
+    {
+        "uid": "hrkzcpyxxkjup4hxz1td86yhhbyyq71g",
+        "product": 2,
+        "name": "Product 2",
+        "price": 100,
+        "qty": 3,
+        "weight": 0,
+        "discount": 0,
+        "tax": 0,
+        "shipping": 0,
+        "thumb": null,
+        "options": [],
+        "subtotal": "300.00",
+        "total": "300.00",
+        "created_at": "2021-01-14T23:00:34.813746Z",
+        "updated_at": null
+    }
+]
+```
+
 
 
 ## Cart Info
-### Cart::info() provide you all of data about an isntance like total(), subtotal(), tax(), discount(), count() and others
 ### Cart::info() or $cart->info()
+### Provide all qurey like total(), subtotal(), tax(), discount(), count() and others
 
 ```php
 // 1st example
@@ -412,6 +469,72 @@ Cart::info('qty');
 Cart::info('total')  //etc
 ```
 
+Like as
+
+```json
+{
+    "instance": "shopping-cart",
+    "count": 3,
+    "shipping": "0.00",
+    "discount": "0.00",
+    "tax": "0.00",
+    "subtotal": "461.00",
+    "total": "461.00",
+    "items": [
+        {
+            "uid": "h6zc3duk5cqu69y5tcof0u01iwx47tyy",
+            "product": 6,
+            "name": "Product 6",
+            "price": 80.5,
+            "qty": 1,
+            "weight": 0,
+            "discount": 0,
+            "tax": 0,
+            "shipping": 0,
+            "thumb": null,
+            "options": [],
+            "subtotal": "80.50",
+            "total": "80.50",
+            "created_at": "2021-01-14T23:00:14.590324Z",
+            "updated_at": null
+        },
+        {
+            "uid": "iafu81ochafwyeehpkviy5s7dwdsogbf",
+            "product": 1,
+            "name": "Product 1",
+            "price": 80.5,
+            "qty": 1,
+            "weight": 0,
+            "discount": 0,
+            "tax": 0,
+            "shipping": 0,
+            "thumb": null,
+            "options": [],
+            "subtotal": "80.50",
+            "total": "80.50",
+            "created_at": "2021-01-14T23:00:23.505786Z",
+            "updated_at": null
+        },
+        {
+            "uid": "hrkzcpyxxkjup4hxz1td86yhhbyyq71g",
+            "product": 2,
+            "name": "Product 2",
+            "price": 100,
+            "qty": 3,
+            "weight": 0,
+            "discount": 0,
+            "tax": 0,
+            "shipping": 0,
+            "thumb": null,
+            "options": [],
+            "subtotal": "300.00",
+            "total": "300.00",
+            "created_at": "2021-01-14T23:00:34.813746Z",
+            "updated_at": null
+        }
+    ]
+}
+```
 
 
 ## License
