@@ -22,7 +22,7 @@
                 "Munna\\ShoppingCart\\ShoppingCartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Munna\\ShoppingCart\\Facades\\ShoppingCart"
+                "Cart": "Munna\\ShoppingCart\\Facades\\Cart"
             }
         }
     }
