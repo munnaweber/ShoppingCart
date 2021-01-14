@@ -1,0 +1,29 @@
+{
+    "name": "munna/shopping-cart",
+    "description": "Simple Laravel Shopping Cart Package. Store Your Cart Items On Local. No Need To Any Migration Or Database Query/Relation. Its More Flexible. Happy Laravel Coding...",
+    "type": "package",
+    "keywords": ["Laravel Shopping Cart", "Shopping Cart", "Munna/ShopingCart", "munna/shopping-cart", "Ecommerce", "Ecommerce Shopping Cart"],
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [{
+        "name": "Munna",
+        "email": "munnawb9@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Munna\\ShoppingCart\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Munna\\ShoppingCart\\ShoppingCartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Munna\\ShoppingCart\\Facades\\ShoppingCart"
+            }
+        }
+    }
+}
