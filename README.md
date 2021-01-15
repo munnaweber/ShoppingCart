@@ -14,6 +14,25 @@ Next, run the Composer command to install the latest stable version:
 composer require munna/shopping-cart
 ```
 
+
+## Full Overview In Short
+
+* [Add](#Add )
+* [Update](#Update)
+* [Remove](#Remove)
+* [Search](#Search)
+* [Calculation](#Calculation)
+* [Total](#Total)
+* [Subtotal](#Subtotal)
+* [Count](#Count)
+* [Shipping](#Shipping)
+* [Tax](#Tax)
+* [Discount](#Discount)
+* [Items](#Items)
+* [Info](#Info)
+* [Clear](#Clear)
+
+
 ## Create A Class Instance
 
 munna\shopping-cart provide two type of instances. You can call the Cart class directly as static class or you can create class object. 
@@ -107,7 +126,7 @@ return $cart;
 
 
 
-## Add Cart 
+## Add
 ### Cart::add() or $cart->add()
 
 ```php
@@ -148,7 +167,7 @@ After successful you will get this on return
 ```
 
 
-## Update Cart 
+## Update 
 ### Cart::update() or $cart->update()
 
 ```php
@@ -179,7 +198,7 @@ After successful you will get this on return
 ```
 
 
-## Remove Cart 
+## Remove 
 ### Cart::remove() or $cart->remove()
 
 ```php
@@ -210,7 +229,7 @@ After successful you will get this on return
 
 
 
-## Search / Get Cart 
+## Search
 ### Cart::search() or $cart->search() or Cart::get() or $cart->get()
 
 ```php
@@ -256,7 +275,7 @@ After successful you will get this on return
 ```
 
 
-## Clear / Destroy
+## Clear
 ### Cart::clear() or $cart->clear()
 
 ```php
@@ -278,10 +297,10 @@ After successful you will get this on return
 ```
 
 
-# Calucation Part
+# Calucation
 
 
-## Cart Total
+## Total
 ### Cart::total() or $cart->total()
 
 ```php
@@ -293,7 +312,7 @@ $cart->total();
 Cart::total();
 ```
 
-## Cart Subtotal
+## Subtotal
 ### Cart::subtotal() or $cart->subtotal()
 
 ```php
@@ -306,7 +325,7 @@ Cart::subtotal();
 ```
 
 
-## Cart Discount
+## Discount
 ### Cart::discount() or $cart->discount()
 
 ```php
@@ -319,7 +338,7 @@ Cart::discount();
 ```
 
 
-## Cart shipping
+## Shipping
 ### Cart::shipping() or $cart->shipping()
 
 ```php
@@ -332,7 +351,7 @@ Cart::shipping();
 ```
 
 
-## Cart tax
+## Tax
 ### Cart::tax() or $cart->tax()
 
 ```php
@@ -345,7 +364,7 @@ Cart::tax();
 ```
 
 
-## Cart count
+## Count
 ### Cart::count() or $cart->count()
 
 ```php
@@ -358,7 +377,7 @@ Cart::count();
 ```
 
 
-## Cart Items
+## Items
 ### Cart::items() or $cart->items()
 
 ```php
@@ -443,7 +462,7 @@ Look like as
 
 
 
-## Cart Info
+## Info
 ### Cart::info() or $cart->info()
 ### Provide all qurey like total(), subtotal(), tax(), discount(), count() and others
 
