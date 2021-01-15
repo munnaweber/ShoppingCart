@@ -374,13 +374,13 @@ Cart::items();
 
 // Example
 
-Cart::item('price');
+Cart::items('price');
 // or
-Cart::item('name');
+Cart::items('name');
 // or
-Cart::item('qty');
+Cart::items('qty');
 // or 
-Cart::item('total')  //etc
+Cart::items('total')  //etc
 ```
 
 Look like as
