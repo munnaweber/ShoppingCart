@@ -31,6 +31,7 @@ composer require munna/shopping-cart
 * [Items](#Items)
 * [Info](#Info)
 * [Clear](#Clear)
+* [Video Tutorial](#Video)
 
 
 ## Create A Class Instance
@@ -553,6 +554,12 @@ Like as
     ]
 }
 ```
+
+
+## Video
+
+Check this video if you need.
+[![Laravel Shopping Cart](https://i9.ytimg.com/vi/JFW1AHNJ3WU/mq2.jpg?sqp=CISViIAG&rs=AOn4CLBVxqzL9URa2J8sQiKFzStc2PuRzA)](https://www.youtube.com/watch?v=JFW1AHNJ3WU&feature=youtu.be&ab_channel=OnlineEnergy)
 
 
 ## License
